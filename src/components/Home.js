@@ -4,11 +4,6 @@ function Home(props) {
     console.warn("Home Propss+++++", props.data)
   return (
     <div>
-        <div className="add-to-cart"> 
-        <span className="cart-count"> {props.data.length}</span>
-        <img src="https://cdn-icons-png.flaticon.com/512/3523/3523885.png" alt="not found"/>
-
-        </div>
         <h1> Home Component </h1>
         <div className="cart-wrapper">
             <div className="img-wrapper item">
@@ -20,6 +15,7 @@ function Home(props) {
             </div>
             <div className="btn-wrapper item">
                 <button onClick={()=>{props.addToCartHandler({price: '299$', name: "Fruits"})}}> Add To Cart </button>
+                <button className="rmvbtn" onClick={()=>{props.removeToCartHandler()}}> Remove To Cart </button>
             </div>
         </div>
     </div>

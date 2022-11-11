@@ -34,10 +34,17 @@
   background-color: green;
   color: white;
   border: 1px solid black;
-  padding: 10px;
+  padding: 7px;
   border-radius: 4px;
   box-shadow: black 4px 1px 1px 1px;
 }
+
+button.rmvbtn{
+  background-color: red  ;
+  margin-top: 8px;
+}
+
+
 
 .img-wrapper img {
   width: 100px;
@@ -68,7 +75,7 @@
   float: left;
   display: inline;
   width: 120px;
-  padding: 20px;
+  padding: 14px;
   height: 90px;
 }
 
